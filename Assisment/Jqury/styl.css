@@ -1,0 +1,82 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: silver;
+}
+.form
+{
+     margin-top:8px;
+    width: 100%;
+    height: 1260px;  
+  
+}
+/* first mate */
+.first
+{
+margin-left: 2%;
+font-size:30px;
+
+}  
+/* gender mate */
+.gender
+{
+margin-left: 2%;
+font-size: 30px;
+}
+
+.first input
+{margin-top: 2%;
+background-color: white;
+width: 800px;
+height: 50px;
+font-size: 30px;
+}
+
+/* address text area mate */
+.first textarea
+{
+background-color: white;
+width: 400px;
+height: 60px;
+font-size: 30px;
+}
+button
+{
+border-radius: 6px;
+background-color: green;
+color: white;
+height: 55px;
+font-size: 30px;
+margin-left: 2%;
+}
+h2
+{   
+text-align: center;
+color:red;
+height: 80px;
+background-color: white;
+font-size: 40px;
+
+}
+.qulification
+{
+margin-left: 2%;
+font-size: 30px;
+
+}
+.qulification select
+{
+font-size: 30px;
+}
+
+/* chekbox mate */
+.chek
+{
+margin-left: 2%;
+font-size: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="Form_using_css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h2><u>Student Registaration Form</u></h2>
+  <form action="" onsubmit="return ValidDate()" method="post">
+    <div class="form">
+        <div class="first">First Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter your First Name" name="Firstname" id="name"></div><br>
+        <div class="first">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter your Last Name" name="Lastname" id="name"></div><br>
+        <div class="first">Email:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="it should contail @.." name="email" id="email"></div><br>
+        <div class="first">Mobile:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel"placeholder="only 10 digit are allowed" minlength="10" maxlength="10" name="mobile" id="mobile"></div><br>
+    
+        <!-- gender -->
+        <div class="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="" id="gender">Male
+            <input type="radio" name="gender" value="">Female
+        </div><br>
+        <!-- Dob -->
+        <div class="first">Date of Birth:
+            <input type="date" name="dob" id="dob">
+        </div><br>
+
+        <!-- Address -->
+        <div class="first">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea name="" id="" cols="30" rows="5" name="Address" id="Address"></textarea>
+        </div><br>
+
+        <!-- City -->
+        <div class="first">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="city" id="city">
+        </div><br>
+
+            <!-- pin -->
+        <div class="first">Area PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" minlength="6" maxlength="6" name="pincode" id="pincode">
+        </div><br>
+            
+            <!-- state -->
+        <div class="first">State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; <input type="text" name="state" id="state">
+         </div><br>
+            
+         <!-- Qulification -->
+         <div class="qulification">Qualification:
+           
+           <select>
+            <option>Qualification</option>
+            <option>10th</option>
+            <option>12th</option>
+            <option>Graduted</option>
+        </select>
+         </div> <br> 
+
+         <div class="chek">Specialization:
+
+            <input type="checkbox" name="chek" id="chek">Computer Science<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="checkbox">Information Technology<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="checkbox">Computer Architecture<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="checkbox">Tale Communication
+         </div><br>
+
+         <!-- password -->
+         <div class="first">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="password" id="password">
+            </div><br>
+
+        <button>Registered</button>
+    
+    </div>
+</form>
+</body>
+</html>
