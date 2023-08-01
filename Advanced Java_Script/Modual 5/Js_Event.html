@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event</title>
+</head>
+<body>
+    <button id="thisbutton">console.log()</button>
+    <hr>
+    <a href="#" id="mylink">Anchor link</a>
+    <hr>
+    <button id="writebtn">Write Content</button>
+    <div id="output"></div>
+    <hr>
+    <button id="updatebutton">Update Button</button>
+
+    <script>
+        // Consol.log() using Event
+
+        var thisbutton = document.getElementById("thisbutton");
+        thisbutton.addEventListener("click",function () {
+        console.log("console.log() button link is clicked.");            
+        })
+
+        // alert using event
+
+        var mylink = document.getElementById("mylink");
+        mylink.addEventListener("click",function () {
+            alert("Anchor link is clicked.");
+        })
+
+
+        // document.write using() Event
+
+        var writebtn = document.getElementById("writebtn");
+        var outputdiv = document.getElementById("output");
+
+        writebtn.addEventListener("click",function () {
+            outputdiv.innerHTML = "<p> document.write() button is clicked.</p>"
+        })
+
+        // innerHtml() using event
+        var updatebtn = document.getElementById("updatebutton");
+        updatebtn.addEventListener("click",function () {
+        outputdiv.innerHTML = "<b>New Content was Clicked.</b>";            
+        })
+    </script>
+</body>
+</html>

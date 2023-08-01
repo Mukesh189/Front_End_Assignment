@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring assignment</title>
+</head>
+<body>
+    <!-- a)Name property into the variable name. -->
+    <script>
+        const user = {
+            name:"John",age:30,email:"Mukesh@Example.com",
+        };
+        const {name} = user;
+        console.log(name);
+     </script>
+
+     <!-- b)Year’s property into the variable age. -->
+     <script>
+        const users = {
+            Name:"John",Year:1990,email:"Mukesh@Example.com"
+        }
+
+        const {Year:age} =users;
+        console.log(age);
+     </script>
+
+     <!-- c)isAdmin property into the variable isAdmin (false, if no such property) -->
+     <script>
+         const Admin = {
+            Name:"John",Year:1990,email:"Mukesh@Example.com"
+        }
+
+        const {isAdmin=false} =Admin;
+        console.log(isAdmin);
+     </script>
+
+     <!-- d)let user = { name: "John", years: 30}; -->
+     <script>
+            let uses  = {name:"John",years:30};
+            console.log(uses.name);
+            console.log(uses.years);
+     </script>
+
+
+</body>
+</html>

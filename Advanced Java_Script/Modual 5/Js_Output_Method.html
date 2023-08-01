@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Output Method</title>
+</head>
+<body>
+    <p>Check the luckyDraw Winner:</p>
+    <button onclick="alret_Show()">Click</button>
+    <div id="output1"></div>
+    <div id="output2"></div>
+
+    <script>
+
+        //  Consol.log()
+// this method use to direct show the consol
+        var name= "Mukesh Pal";
+        age=20;
+        console.log("name :",name);      
+        console.log("age :",age);
+
+
+        // document.write();
+        // this method use to direct show the html page
+        document.write("My Name is Mukesh.");
+
+
+        // Alert
+         // this method use to direct show the alert
+        alert("Welcome to our website.");
+
+        function alret_Show() 
+        {
+            alert("You are selectd the winner.");
+        }
+
+        // inner html
+           // this method use to direct show the output change
+        var outputElement = document.getElementById('output1').innerHTML="Hello Word";
+        var outputElement1 = document.getElementById('output2').innerHTML="Hello user";
+    </script>
+</body>
+</html>

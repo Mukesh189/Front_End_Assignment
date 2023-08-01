@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Object</title>
+</head>
+<body>
+    <script>
+
+
+        // total salary print karva mate
+        function sumSalaries(salaries)
+        {
+            const salaryValues = Object.values(salaries);
+            let totalSalary = 0;
+            for (const salary of salaryValues) 
+            {
+                totalSalary += salary;
+            } 
+            return totalSalary;
+        }
+
+        let salaries={
+            "John":100,
+            "Pete":300,
+            "Mere":250
+        };
+
+        alert(sumSalaries(salaries));
+
+    </script>
+</body>
+</html>

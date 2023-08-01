@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map to Name</title>
+</head>
+<body>
+    <button onclick="clicks()">Click</button>
+    <script>
+
+        // only  show name
+        let john = {name:"John",age:25};
+        let pete={name:"Pate",age:30};
+        let mary={name:"Mary",age:28};
+    let users=[john,pete,mary];
+    let names=users.map(user =>user.name );    
+    
+    // alert print karva mate
+    function clicks() 
+    {
+        alert(names);
+    }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alret_zero_print</title>
+</head>
+<body>
+    <input type="number" id="demo">
+    <input type="submit" id="submit" onclick="return demo()">
+    <script>
+        
+        function demo() 
+        {
+            var input=document.getElementById('demo').value;
+            var button=document.getElementById('submit');
+
+            // Input  0 then show the alret  hello
+            if (input == 0) 
+            {
+                alert('hello');
+                return false;
+                
+            }
+        }
+    </script>
+</body>
+</html>

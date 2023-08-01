@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Total</title>
+<style>
+.numbers{
+float: left;
+margin-top: -40px;
+width: 80px;
+height: 30px;
+}
+.indian_Rupees
+{
+    border: none;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#Price_total
+{
+    border: none;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#remove
+{
+    width: 80px;
+    height: 40px;
+    float: left;
+    margin-top: -40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    border-left: none;
+    cursor: pointer;
+}
+
+.totals
+{
+ height: 30px;
+}
+</style>
+
+
+
+</head>
+<body>
+    
+
+
+    <table border="1px">
+        <tr>
+            <th>Product Info</th>
+            <th>Quantity</th>
+            <th>Price(per limit)</th>
+            <th>Price(subtotal)</th>
+            <th>Button</th>
+        </tr>
+
+        <!-- second line -->
+        <tr>
+            <th>
+                <img src="image/mobile touch.jpeg" width="50px" style="border-radius: 10px;" height="60px" alt=""><br>A smartphone is a portable<br> computer device that
+             </th>
+
+            <th><input type="number" class="numbers" id="numberse" onkeyup="enterthenumber()"></th>
+            <th class="indian_Rupees">₹ 15000</th>
+            <th id="Price_total"></th>
+
+            <th><button id="remove" onclick="removesmart_fone()">Remove</button></th>
+        </tr>
+
+
+
+        <!-- Second rows -->
+        <tr>
+            <th border-top="1px solid black">
+                <img src="image/keypade mobile.jpeg" width="50px" style="border-radius: 10px;" height="60px" alt=""><br>A Keypade is a portable<br> computer device that
+             </th>
+
+            <th><input type="number" class="numbers" id="numb" onkeyup="enterthenumber()"></th>
+            <th class="indian_Rupees">₹ 1500</th>
+            <th id="Prices"></th>
+
+            <th><button id="remove" onclick="removesmar_fone()" >Remove</button></th>
+        </tr>
+
+
+        <!-- third total mate -->
+        <tr>
+            <th class="totals"></th>
+            <th class="totals"></th>
+            <th class="totals"></th>
+            <th id="total"></th>
+            <th class="totals"></th>
+        </tr>
+
+
+
+    </table>
+
+
+<script>
+    function enterthenumber() {
+        
+    
+
+    var count=document.getElementById('numberse').value;
+    var result=15000*count;
+    document.getElementById('Price_total').innerHTML=result;
+
+//   value of 1500 multi in input
+    var five=document.getElementById('numb').value;
+    var anser=1500*five;
+    document.getElementById('Prices').innerHTML=anser;
+
+    var totals= (document.getElementById('total').innerHTML=
+    result + anser);
+}
+
+// Remove mate
+function removesmart_fone() 
+{
+    var smart_Quantity = document.getElementById("numberse");
+    smart_Quantity.value=0;
+
+    document.getElementById("Price_total").innerHTML=" ₹ " + 0;
+
+    var smart_Quantity01 = document.getElementById("numberse").value;
+    var results = 15000 * smart_Quantity01;
+    var kepade_Quantity01 = document.getElementById("numb").value;
+    var results1=1500 * kepade_Quantity01;
+
+    var total_amt = results + results1;
+    var remove_fone_item = total_amt - results;
+    document.getElementById("total").innerHTML=" ₹ " + (remove_fone_item);
+}
+
+// remove 1500
+function removesmar_fone() 
+{
+    var smart_Quantity = document.getElementById("numb");
+    smart_Quantity.value=0;
+
+    document.getElementById("Prices").innerHTML=" ₹ " + 0;
+
+    var smart_Quantity01 = document.getElementById("numb").value;
+    var results = 1500 * smart_Quantity01;
+    var kepade_Quantity01 = document.getElementById("numberse").value;
+    var results1=15000 * kepade_Quantity01;
+
+    var total_amt = results + results1;
+    var remove_fone_item = total_amt - results;
+    document.getElementById("total").innerHTML=" ₹ " + (remove_fone_item);
+}
+
+
+
+</script>
+</body>
+</html>

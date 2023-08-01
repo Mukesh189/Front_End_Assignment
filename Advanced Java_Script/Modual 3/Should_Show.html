@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Should_Show</title>
+</head>
+<body>
+    <button class="clickable">Click me!</button>
+    <p class="clickable">Click me too!</p>
+    <div class="clickable">Click on this div!</div>
+    <script>
+
+        // alret show karva mate
+
+        function handleClick() 
+        {
+       alert("You clicked on an element with the ");     
+        }
+        const clickableElements = document.getElementsByClassName("clickable");
+
+        for (let i = 0; i<clickableElements.length; i++) 
+        {
+            clickableElements[i].addEventListener("click",handleClick);
+           
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cunfirm</title>
+</head>
+<body>
+    <input type="text" id="demo_o">
+    <input type="submit" id="submit" onclick="demo()">
+    <script>
+
+            function demo() 
+            {
+                var age=document.getElementById('demo_o').value;
+                var button=document.getElementById('submit');
+               
+            //  Not Eligibility
+                if (age > 18) 
+                {
+                    alert("You are Eligibility");
+                    return true;
+                }
+
+                // confirm ma did your parants allows you
+                var age=confirm("Did your parents allows you!")
+                if (age == true)
+                 {
+                    alert("You are elegible for this.");
+     
+                } 
+                else 
+                {
+                    alert("You are not elegible for this.");
+                    
+                }
+
+
+            }
+
+
+    </script>
+</body>
+</html>
